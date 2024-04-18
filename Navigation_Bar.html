@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down menu</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About us</a><i class="fa-solid fa-house"></i>
+                <div class="sub-menu1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a>
+                            <div class="sub-menu2">
+                                <ul>
+                                    <li><a href="#">Activity</a></li>
+                                    <li><a href="#">Rank</a></li>
+                                    <li><a href="#">Test series</a></li>
+                                    <li><a href="#">Rank Improve</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Hackthon</a></li>
+        </ul>
+    </div>
+    <div class = "background">
+        <img src="E:\HTML files\Practical HTML\Q6\download (1).jpeg" height="700"width ="1600">
+    </div>
+</body>
+</html>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+    }
+    .menu-bar{
+        background:rgb(0, 100, 88);
+        text-align:center;
+    }
+    .menu-bar ul{
+        display: inline-flex;
+        list-style:none;
+        color:#fff;
+    }
+    .menu-bar ul li{
+        width:120px;
+        margin:15px;
+        padding: 15px;
+    }
+    .menu-bar ul li a{
+        color:#fff;
+        text-decoration: none;
+    }
+    .active , .menu-bar ul li:hover{
+        background: rgb(60, 170, 225);
+        border-radius: 3px;
+    }
+    .sub-menu1{
+        display: none;
+    }
+    .menu-bar ul li:hover .sub-menu1{
+        display:block;
+        position: absolute;
+        background-color:rgb(147, 186, 235);
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul{
+        display: block;
+        margin:10px;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul li{
+        width:150px;   
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul li:last-child{
+        border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul li a:hover{
+        color:yellow;
+    }
+    .sub-menu2{
+        display: none;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul li:hover .sub-menu2{
+        background-color: rgb(201, 213, 219);
+        display:block;
+        position: absolute;
+        background-color:rgb(201, 213, 219);
+        margin-top: 10px;
+        margin-left: 110px;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul li:hover .sub-menu2 ul{
+        display: block;
+        margin:10px;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul li:hover .sub-menu2 ul li{
+        width:150px;   
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        border-radius: 0;
+        text-align: right;
+    }
+    .menu-bar ul li:hover .sub-menu1 ul li:hover .sub-menu2 ul li:last-child{
+        border-bottom: none;
+    }
+</style>
