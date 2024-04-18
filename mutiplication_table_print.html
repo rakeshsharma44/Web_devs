@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Multiple print</h1>
+    <div id="demo"></div>
+<script >
+  let text ="";
+  let i = 1;
+  let number = prompt("Enter number: ");
+  while (i<10){
+      text += i +" x "+ number+" = " + i*number +"<br> ";
+      i++;
+
+  }
+  document.getElementById('demo').innerHTML =text;
+
+</script>
+</body>
+</html>
