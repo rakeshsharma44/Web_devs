@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <h1>Factorial of<br></h1> 
+        <div id="demo_1">
+        </div>
+    </div>
+    <div class="container"><br>
+        <div id ="demo">
+        </div>
+    </div>
+<script>
+  let text_head="";
+let i = 1;
+let number = prompt("Enter number : ");
+text_head+=number
+let text="";
+while(i<number){
+    text += i+" x ";
+    i++;
+}
+let output =1;
+let p=1;
+while(p<=number){
+    output = output*p
+    p++ 
+}
+text =text+ number +" = "+output
+document.getElementById('demo').innerHTML=text;
+document.getElementById('demo_1').innerHTML=text_head;
+</script>
+</body>
+</html>
